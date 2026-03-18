@@ -28,10 +28,13 @@
 industrial-ad-web/
 ├── app.py                     # 主程序（Web 界面）
 ├── download_model.py          # 模型下载脚本（首次运行需要）
-├── core/                      # 核心算法模块
-│   ├── __init__.py
-│   ├── model_handler.py       # 本地模型加载（带缓存）
-│   └── inference.py           # 缺陷检测推理逻辑
+
+├── core/                      # 核心算法引擎包（完全解耦，可独立调用）
+│   ├── inference.py           # 大模型前向推理、张量解析与边界框计算核心
+│   ├── image_enhancer.py      # 工业图像画质增强算法（CLAHE、非局部均值去噪等）
+│   ├── dashboard.py           # 生产数据大屏渲染与多维统计图表构建
+│   ├── model_handler.py       # 离线模型加载与硬件资源缓存调度
+│   └── utils.py               # 企业级运行日志记录与 JSON 数据库读写
 ├── models/                    # 存放下载的模型文件（运行 download_model.py 后生成）
 │   └── clipseg/               # 模型文件（以后新建文件夹，可以上传更新的训练模型）
 ├── sample_images/             # 示例图片文件夹（用户可自行添加）
