@@ -1,0 +1,38 @@
+[
+    {
+        "timestamp": "2026-03-18 15:46:13",
+        "product": "bottle",
+        "result": "Defective",
+        "confidence_score": 0.8914
+    },
+    {
+        "timestamp": "2026-03-18 16:13:20",
+        "product": "bottle",
+        "result": "Defective",
+        "confidence_score": 0.8914
+    },
+    {
+        "timestamp": "2026-03-18 16:21:30",
+        "product": "car",
+        "result": "Defective",
+        "confidence_score": 0.8278
+    },
+    {
+        "timestamp": "2026-03-18 16:23:10",
+        "product": "car",
+        "result": "Defective",
+        "confidence_score": 0.8899
+    },
+    {
+        "timestamp": "2026-03-18 16:23:22",
+        "product": "car",
+        "result": "Defective",
+        "confidence_score": 0.8909
+    },
+    {
+        "timestamp": "2026-03-26 10:21:57",
+        "product": "bottle",
+        "result": "Defective",
+        "confidence_score": 0.8244
+    }
+]
