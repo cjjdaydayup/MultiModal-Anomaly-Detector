@@ -147,3 +147,8 @@ result = detector.detect_path(
 - 当前模型文件较大，请确保磁盘空间和网络稳定。
 - 如果需要第三方程序调用，优先使用 `industrial_ad` 包或 `main.py` 命令行入口。
 
+## 👌 新增文件
+*industrial_ad/eval.py*
+- 它会：读取 CSV 或 JSON，从expected / predicted 列直接算；如果没有 predicted，就用 score + threshold 算
+- 输出 accuracy / precision / recall / F1
+- 可选把结果另存成 JSON
