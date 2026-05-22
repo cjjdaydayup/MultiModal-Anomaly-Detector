@@ -149,6 +149,6 @@ result = detector.detect_path(
 
 ## 👌 新增文件
 *industrial_ad/eval.py*
-- 它会：读取 CSV 或 JSON，从expected / predicted 列直接算；如果没有 predicted，就用 score + threshold 算
+- 它会：读取 CSV 或 JSON
 - 输出 accuracy / precision / recall / F1
 - 可选把结果另存成 JSON
